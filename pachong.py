@@ -9,7 +9,6 @@ res = ur.urlopen(addr)
 soup = BeautifulSoup(res, "html.parser")
 aAll = soup.select("div[frag='面板89'] .news_list a")
 first=aAll[0].string
-link="http://neunews.neu.edu.cn"+aAll[0]["href"]
 while True:
     res=ur.urlopen(addr)
     soup=BeautifulSoup(res,"html.parser")
@@ -17,7 +16,7 @@ while True:
     if aAll[0].string!=first:
         first=aAll[0].string
         link="http://neunews.neu.edu.cn/"+aAll[0]["href"]
-        text=key+"text="+first+"？desp="+link
+        text=key+"text="+first+"&desp="+link
         post=requests.post(text)
         print("已发送消息",aAll[0].string,"!")
     else:
