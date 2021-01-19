@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import requests
 import time
 addr="http://neunews.neu.edu.cn/tzgg/list.htm"
-key="http://sc.ftqq.com/SCU152313Tf05b36ce17db79bc8b50daa49301461a6006dc3aa2aaa.send?"
+key="http://sc.ftqq.com/[SCKEY].send?"
 res = ur.urlopen(addr)
 soup = BeautifulSoup(res, "html.parser")
 aAll = soup.select("div[frag='面板89'] .news_list a")
