@@ -4,8 +4,8 @@
 # 使用方法：  
   进入[server酱官网](http://sc.ftqq.com/) 自行登录  
   进入 微信推送 绑定微信号  
-  然后进入 发送消息 复制自己的SCKEy  
-  替换掉pachong.py 第七行中的“[SCKEY]”  
+  然后进入 发送消息 复制自己的SCKEY    
+  替换掉pachong.py 中的“[SCKEY]”  
   例“key="http://sc.ftqq.com/SCU152313Tf05b36ce17db7sdfsdfsd9bc8b50301406dc3aa2aaa.send?"”   
   最后运行 python pachong.py即可  
   
